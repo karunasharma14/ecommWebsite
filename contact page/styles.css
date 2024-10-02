@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    background-color: #4CAF50;
+    padding: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navbar-title {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .back-button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .back-button:hover {
+    background-color: #333;
+  }
+  
+  .chat-container {
+    width: 40%;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .chat-header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .chat-header h2, .chat-header h3 {
+    margin: 0;
+  }
+  
+  .chat-box {
+    padding: 10px;
+    height: 300px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    margin-top: 20px;
+  }
+  
+  .chat-message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+  }
+  
+  .user-message {
+    background-color: #e0e0e0;
+    align-self: flex-start;
+  }
+  
+  .helper-message {
+    background-color: #4CAF50;
+    color: white;
+    align-self: flex-end;
+  }
+  
+  .chat-input {
+    display: flex;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f4f4f4;
+  }
+  
+  .chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .chat-input button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .chat-input button:hover {
+    background-color: #45a049;
+  }
+  
+  .call-feature {
+    padding: 10px 15px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  
+  .call-feature:hover {
+    background-color: #e64a19;
+  }
+  

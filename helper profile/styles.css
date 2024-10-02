@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* .profile-card {
+    background-color: rgb(103, 164, 124);
+    width: 100%;
+    height: 100%;
+    /* padding: 20px; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+.profile-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+}
+
+.profile-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    margin-bottom: 10px;
+}
+
+.name-age {
+    text-align: center;
+}
+
+.profile-details {
+    width: 300px;
+}
+
+.profile-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    position: absolute;
+    bottom: 0px;
+}
+ 
+
+.profile-buttons button {
+    background-color: #6b4e9b;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.profile-buttons button:hover {
+    background-color: #5a3f85;
+}
+/* rating star */
+.rating {
+    display: inline-block;
+    position: relative;
+    height: 20px;
+    line-height: 20px;
+    font-size: 20px;
+  }
+  
+  .rating label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    cursor: pointer;
+  }
+  
+  .rating label:last-child {
+    position: static;
+  }
+  
+  .rating label:nth-child(1) {
+    z-index: 5;
+  }
+  
+  .rating label:nth-child(2) {
+    z-index: 4;
+  }
+  
+  .rating label:nth-child(3) {
+    z-index: 3;
+  }
+  
+  .rating label:nth-child(4) {
+    z-index: 2;
+  }
+  
+  .rating label:nth-child(5) {
+    z-index: 1;
+  }
+  
+  .rating label input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  
+  .rating label .icon {
+    float: left;
+    color: transparent;
+  }
+  
+  .rating label:last-child .icon {
+    color: #000;
+  }
+  
+  .rating:not(:hover) label input:checked ~ .icon,
+  .rating:hover label:hover input ~ .icon {
+    color: rgb(255, 255, 0);
+    
+    
+  }
+  
+  .rating label input:focus:not(:checked) ~ .icon:last-child {
+    color: #000;
+    text-shadow: 0 0 5px  rgb(255, 255, 0);
+  }

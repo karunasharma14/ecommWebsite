@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helper Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="profile-card">
+        <div class="profile-image">
+            <img src="placeholder-image.png" alt="Profile Picture">
+            <div class="name-age">
+                <p><strong>NAME</strong></p>
+                <p>AGE</p>
+            </div>
+        </div>
+
+        <div class="profile-details">
+            <p><strong>Services:</strong><input input type="text" placeholder=""/></p>
+            <p><strong>Charges:</strong><input input type="number" placeholder="in ruppes"/></p>
+            <p><strong>Feedback:</strong><input input type="text"/><button input type="submit">submit</button></p>
+            <p><strong>Rating:</strong><form class="rating">
+                <label>
+                  <input type="radio" name="stars" value="1" />
+                  <span class="icon">★</span>
+                </label>
+                <label>
+                  <input type="radio" name="stars" value="2" />
+                  <span class="icon">★</span>
+                  <span class="icon">★</span>
+                </label>
+                <label>
+                  <input type="radio" name="stars" value="3" />
+                  <span class="icon">★</span>
+                  <span class="icon">★</span>
+                  <span class="icon">★</span>   
+                </label>
+                <label>
+                  <input type="radio" name="stars" value="4" />
+                  <span class="icon">★</span>
+                  <span class="icon">★</span>
+                  <span class="icon">★</span>
+                  <span class="icon">★</span>
+                </label>
+                <label>
+                  <input type="radio" name="stars" value="5" />
+                  <span class="icon">★</span>
+                  <span class="icon">★</span>
+                  <span class="icon">★</span>
+                  <span class="icon">★</span>
+                  <span class="icon">★</span>
+                </label>
+              </form></p>
+            
+            
+        </div>
+
+        <div class="profile-buttons">
+            <button onclick="handleContact()">CONTACT</button>
+            <button onclick="handlePayment()">PAYMENT</button>
+            <button onclick="handleBook()">BOOK</button>
+            <button onclick="handleMessage()">MESSAGE</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

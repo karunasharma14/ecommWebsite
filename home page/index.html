@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Helper Registration Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Website Logo">
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li class="menu">
+        <a href="#">Menu</a>
+        <ul class="dropdown">
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Booking</a></li>
+          <li><a href="#">Transaction</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Search Bar -->
+  <div class="search-container">
+    <input type="text" placeholder="Search for a helper..." id="searchBar">
+    <button onclick="searchHelper()">Search</button>
+  </div>
+
+  <!-- Profile Cards -->
+  <div class="profiles">
+    <div class="card">
+      <img src="profile1.jpg" alt="Helper Photo">
+      <h3>John Doe</h3>
+      <p>Job: Cleaner</p>
+      <p>Contact: 123-456-xx</p>
+      <button onclick="viewMore()">More Info</button>
+    </div>
+    <div class="card">
+      <img src="profile2.jpg" alt="Helper Photo">
+      <h3>Jane Smith</h3>
+      <p>Job: Cook</p>
+      <p>Contact: 987-654-32xx</p>
+      <button onclick="viewMore()">More Info</button>
+    </div>
+    
+    <!-- Add more cards as needed -->
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Helper Service. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

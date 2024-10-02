@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <button id="backBtn" onclick="goBack()">Back</button>
+        <h1>Booking Page</h1>
+    </nav>
+
+    <!-- Progress Tracker -->
+    <div class="progress-container">
+        <div class="step active">Time/Date</div>
+        <div class="step">Payment</div>
+        <div class="step">Confirm</div>
+    </div>
+ <!-- code manul addition  -->
+<div class="container">
+    <!-- Booking Sections -->
+    <div class="section-container">
+        <div id="timeDateSection" class="section active">
+            <h2>Select Time and Date</h2>
+            <input type="date" id="bookingDate">
+            <input type="time" id="bookingTime">
+            <button onclick="nextSection(1)">Next</button>
+        </div>
+        
+        <div id="paymentSection" class="section">
+            <h2>Payment Information</h2>
+            <input type="text" placeholder="Card Number">
+            <input type="text" placeholder="Name on Card">
+            <button onclick="previousSection(0)">Back</button>
+            <button onclick="nextSection(2)">Next</button>
+        </div>
+
+        <div id="confirmSection" class="section">
+            <h2>Confirm Booking</h2>
+            <p>Date: <span id="confirmDate"></span></p>
+            <p>Time: <span id="confirmTime"></span></p>
+            <button onclick="previousSection(1)">Back</button>
+            <button onclick="confirmBooking()">Confirm</button>
+        </div>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

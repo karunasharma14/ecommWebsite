@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Page Chat</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <!-- Navbar -->
+  <nav class="navbar">
+    <button class="back-button" onclick="goBack()">← Back</button>
+    <span class="navbar-title">Contact Page</span>
+  </nav>
+  
+  <div class="chat-container">
+    
+    <!-- Helper name and service -->
+    <div class="chat-header">
+      <h2>Helper: John Doe</h2>
+      <h3>Service: Technical Support</h3>
+    </div>
+    
+    <!-- Chat box -->
+    <div class="chat-box" id="chat-box">
+      <div class="chat-message user-message">
+        <p>Hello, I need help with my account.</p>
+      </div>
+      <div class="chat-message helper-message">
+        <p>Hi! How can I assist you today?</p>
+      </div>
+    </div>
+    
+    <!-- Message input -->
+    <div class="chat-input">
+      <input type="text" id="message-input" placeholder="Type your message...">
+      <button onclick="sendMessage()">Send</button>
+      <!-- Call feature next to the send button -->
+      <button class="call-feature" onclick="startCall()">📞 call </button>
+    </div>
+    
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
